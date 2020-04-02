@@ -26,8 +26,6 @@ public class ProductController {
 		return "products";
 	}
 	
-	
-	
 	@RequestMapping("/new")
 	public String showNewProductPage(Model model) {
 	Product product = new Product();
