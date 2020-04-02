@@ -8,8 +8,13 @@
 </head>
 <body>
 <div align="center">
+Welcome ${dealer.fname} ${dealer.lname} - ${dealer.address.city}
+
+<div aligm="right"><a href="logout">Log Out
+<% out.print(request.getSession().getAttribute("user")); %></a></div>
+<hr>
     <h1>Product List</h1>
-    <img src="/resources/static/images/invent.jpg" alt="img"><br><br>
+    <img src="/resources/static/images/logo.jpg" alt="img"><br><br>
     <hr>
     <a href="/new">Create New Product</a>
     <br/><br/>
