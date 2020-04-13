@@ -114,12 +114,11 @@ public class LoginController {
 		return encodedString;
 	}
 	
-	
-	
 	@GetMapping("/logout")//code for logout
 	public String logout(HttpServletRequest req) {
 	req.getSession().invalidate();
 	return "index";
 	}
+
 	
 }

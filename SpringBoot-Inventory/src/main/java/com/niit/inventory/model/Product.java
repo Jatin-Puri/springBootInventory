@@ -71,6 +71,27 @@ public class Product {
 	public Product() {
 		
 	}
+
+
+	public Product(Long id, String name, String brand, String madein, float price) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.brand = brand;
+		this.madein = madein;
+		this.price = price;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", brand=" + brand + ", madein=" + madein + ", price=" + price
+				+ "]";
+	}
+	
+	
+	
+	
 	
 	
 	
